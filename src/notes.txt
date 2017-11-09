@@ -1,0 +1,15 @@
+To embed a js expr inside of jsx, use curlies:
+<h1>{2+2}</h1>
+
+To pass props to a react component
+<Foo x={10} y={10}/>
+
+To access props from within a react component:
+function Foo(props) {
+    return <div>Foo {props.x + props.y}</div>
+}
+
+Conditional render: if or ternary
+Repeat render: array.map()
+
+In Javascript, it is common to pass args of type: function
