@@ -13,3 +13,27 @@ Conditional render: if or ternary
 Repeat render: array.map()
 
 In Javascript, it is common to pass args of type: function
+
+
+function f1 (x,y,z) {}
+var o = "1"
+f1(o,o,o)
+
+function f2 ({x,y,z}) {}
+var o = {"x":"1","y":"2","z":"3"}
+f2(o)
+
+Two types of React Components:
+    function
+    class
+
+why would you ever create a component as a class?
+    state:
+        in a class component when you update state, it refreshes automatically
+        advanced features: override lifecycle callbacks
+
+class components can have state vars and/or props vars
+    props are passed in from above (like html attributes) - they are read only
+    state is read/write and can be modified by the component that owns the state
+    one component's props are another component's state
+
