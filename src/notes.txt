@@ -37,3 +37,8 @@ class components can have state vars and/or props vars
     state is read/write and can be modified by the component that owns the state
     one component's props are another component's state
 
+
+function f1() {
+    var x = 3
+    var s = `I have ${x} kids`
+}

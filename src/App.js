@@ -7,7 +7,7 @@ export class App extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            tab:"Blue"
+            tab:"Customer"
         }
     }
 
@@ -17,7 +17,7 @@ export class App extends React.Component {
     
     render() {
         return <div>
-            <Tabbar tabs={["Blue","Red","Green","Lesson1","Beatles","Yellow"]} onClick={this.onLinkClick} activeTab={this.state.tab} />
+            <Tabbar tabs={["Blue","Red","Green","Lesson1","Beatles","Yellow","BlackJack","Customer"]} onClick={this.onLinkClick} activeTab={this.state.tab} />
             {/* {body(tab)} */}
             <Body activeTab={this.state.tab} />
         </div>

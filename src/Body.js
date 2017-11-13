@@ -5,6 +5,9 @@ import {Red} from './Red';
 import {Green} from './Green';
 import {People} from './People';
 import {Yellow} from './Yellow';
+import {BlackJack} from './BlackJack';
+import {Customer} from './Customer';
+
 
 function body(tab) {
     if (tab === "Blue") return <Blue />
@@ -13,6 +16,8 @@ function body(tab) {
     if (tab === "Lesson1") return <Lesson1 />
     if (tab === "Yellow") return <Yellow p1="123" />
     if (tab === "Beatles") return <People a={["John","Paul","George","Ringo"]} />
+    if (tab === "BlackJack") return <BlackJack />
+    if (tab === "Customer") return <Customer />
     return <h1>Bad Tab Value {tab}</h1>
 }
 
